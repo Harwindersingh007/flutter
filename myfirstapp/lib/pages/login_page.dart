@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myfirstapp/utils/routes.dart';
 
 class Loginpage extends StatelessWidget {
   const Loginpage({Key? key}) : super(key: key);
@@ -6,9 +7,13 @@ class Loginpage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-        color: Colors.white,
+      color: Colors.white,
+      child: SingleChildScrollView(
         child: Column(
           children: [
+            const SizedBox(
+              height: 20.0,
+            ),
             Image.asset(
               "assets/images/login_image.png",
               fit: BoxFit.cover,
@@ -19,7 +24,7 @@ class Loginpage extends StatelessWidget {
             const Text(
               "Welcome",
               style: TextStyle(
-                fontSize: 25,
+                fontSize: 28,
                 fontWeight: FontWeight.bold,
               ),
             ),
@@ -37,6 +42,9 @@ class Loginpage extends StatelessWidget {
                       labelText: "Username",
                     ),
                   ),
+                  const SizedBox(
+                    height: 20.0,
+                  ),
                   TextFormField(
                     obscureText: true,
                     decoration: const InputDecoration(
@@ -45,19 +53,22 @@ class Loginpage extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    height: 20.0,
+                    height: 50.0,
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      print("hi user");
+                      Navigator.pushNamed(context, MyRoutes.homeRoute);
                     },
                     child: const Text("Login"),
-                    style: TextButton.styleFrom(),
+                    style:
+                        TextButton.styleFrom(minimumSize: const Size(150, 40)),
                   ),
                 ],
               ),
             )
           ],
-        ));
+        ),
+      ),
+    );
   }
 }

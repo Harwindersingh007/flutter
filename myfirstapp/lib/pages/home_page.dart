@@ -17,7 +17,7 @@ class homePage extends StatelessWidget {
           name,
           textAlign: TextAlign.center,
           style: const TextStyle(
-            color: Colors.red,
+            color: Color.fromARGB(255, 19, 4, 223),
             fontSize: 20,
           ),
         ),
