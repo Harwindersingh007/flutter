@@ -6,7 +6,7 @@ class homePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var name = "Harry working in OAE SOLUTIONS";
+    var name = "Harwinder Singh working in OAE SOLUTIONS";
 
     return Scaffold(
       appBar: AppBar(
@@ -15,8 +15,10 @@ class homePage extends StatelessWidget {
       body: Center(
         child: Text(
           name,
+          textAlign: TextAlign.center,
           style: const TextStyle(
-            fontSize: 30,
+            color: Colors.red,
+            fontSize: 20,
           ),
         ),
       ),
