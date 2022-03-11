@@ -10,6 +10,7 @@ class homePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
         title: const Text("myapp"),
       ),
       body: Center(
@@ -17,7 +18,7 @@ class homePage extends StatelessWidget {
           name,
           textAlign: TextAlign.center,
           style: const TextStyle(
-            color: Color.fromARGB(255, 19, 4, 223),
+            color: Colors.deepPurple,
             fontSize: 20,
           ),
         ),
