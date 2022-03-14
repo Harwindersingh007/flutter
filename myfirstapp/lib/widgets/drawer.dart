@@ -6,17 +6,53 @@ class MyDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: non_constant_identifier_names, prefer_const_declarations
+    final Imagename = "assets/images/harry.JPG";
     return Drawer(
-      child: ListView(
-        children: const [
-          DrawerHeader(
-              padding: EdgeInsets.zero,
-              margin: EdgeInsets.zero,
-              child: UserAccountsDrawerHeader(
-                accountName: Text("Harwinder singh"),
-                accountEmail: Text("Harwinderoaesolutions@gmail.com"),
-              ))
-        ],
+      child: Container(
+        color: Colors.deepPurple,
+        child: ListView(
+          //padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+                padding: EdgeInsets.zero,
+                margin: EdgeInsets.zero,
+                child: UserAccountsDrawerHeader(
+                    decoration: const BoxDecoration(color: Colors.deepPurple),
+                    accountName: const Text("Harwinder singh"),
+                    accountEmail: const Text("Harwinderoaesolutions@gmail.com"),
+                    currentAccountPicture: CircleAvatar(
+                      backgroundImage: AssetImage(Imagename),
+                    ))),
+            const ListTile(
+                leading: Icon(
+                  CupertinoIcons.home,
+                  color: Colors.white,
+                ),
+                title: Text(
+                  "Home",
+                  style: TextStyle(color: Colors.white),
+                )),
+            const ListTile(
+                leading: Icon(
+                  CupertinoIcons.profile_circled,
+                  color: Colors.white,
+                ),
+                title: Text(
+                  "Profile",
+                  style: TextStyle(color: Colors.white),
+                )),
+            const ListTile(
+                leading: Icon(
+                  CupertinoIcons.mail,
+                  color: Colors.white,
+                ),
+                title: Text(
+                  "Email me",
+                  style: TextStyle(color: Colors.white),
+                ))
+          ],
+        ),
       ),
     );
   }
