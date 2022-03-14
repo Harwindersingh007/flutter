@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/drawer.dart';
+
 // ignore: camel_case_types
 class homePage extends StatelessWidget {
   const homePage({Key? key}) : super(key: key);
@@ -23,7 +25,7 @@ class homePage extends StatelessWidget {
           ),
         ),
       ),
-      drawer: const Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }
