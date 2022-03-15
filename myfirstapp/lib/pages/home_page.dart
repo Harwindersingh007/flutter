@@ -12,15 +12,16 @@ class homePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple,
-        title: const Text("myapp"),
+        title: const Text(
+          "CatalogApp",
+        ),
       ),
       body: Center(
         child: Text(
           name,
           textAlign: TextAlign.center,
           style: const TextStyle(
-            color: Colors.deepPurple,
+            color: Colors.black,
             fontSize: 20,
           ),
         ),
