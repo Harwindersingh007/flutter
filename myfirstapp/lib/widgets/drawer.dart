@@ -14,6 +14,8 @@ class MyDrawer extends StatelessWidget {
         child: ListView(
           //padding: EdgeInsets.zero,
           children: [
+
+            //drawer header
             DrawerHeader(
                 padding: EdgeInsets.zero,
                 margin: EdgeInsets.zero,
