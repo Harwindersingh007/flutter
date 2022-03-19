@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myfirstapp/pages/card_page.dart';
+import 'package:myfirstapp/pages/cart_page.dart';
 import 'package:myfirstapp/pages/home_page.dart';
 import 'package:myfirstapp/pages/login_page.dart';
 import 'package:myfirstapp/utils/routes.dart';

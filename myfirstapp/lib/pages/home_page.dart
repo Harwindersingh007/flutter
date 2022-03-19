@@ -7,7 +7,6 @@ import 'package:myfirstapp/models/catalog.dart';
 import 'package:myfirstapp/utils/routes.dart';
 import 'package:myfirstapp/widgets/home_widgets/catalog_header.dart';
 import 'package:myfirstapp/widgets/home_widgets/catalog_list.dart';
-import 'package:myfirstapp/widgets/themes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class HomePage extends StatefulWidget {
